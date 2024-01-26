@@ -1,0 +1,14 @@
+#sudo pip install -r requirements.txt
+#sudo pip uninstall -r requirements.txt
+
+#Example of List to install or uninstall pacckages
+Django==1.8
+requests>=2.0
+
+#pip list --format=columns
+#It shows the packages installed
+
+#To generate automatically a requirements file
+#pip freeze > requirements-generated.txt
+
+#Very useful to achieve repeatable installations in variables environments
