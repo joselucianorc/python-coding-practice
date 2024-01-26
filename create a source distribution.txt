@@ -1,0 +1,21 @@
+#cd project_package
+#python3 setup.py sdist
+#It creates the source distribution in the dist directory
+
+#Now it is possible install it from the source distribution directly using pip install like any other project_package
+#sudo pip install dist/package-0.0.1.tar
+#and see it working in the interactive shell
+
+#from mypackage import moduleA
+
+#It is possible uninstall it like any other package
+#sudo pip uninstall mypackage
+
+#trying during the develpment process as it is installed in a python environment
+#Inside the main package directory 
+#python setup.py -e
+#or
+#python setup.py develop
+
+#It will install your package in editable mode or develop mode.
+#It allows your project to be both installed and editable at the same time.

@@ -1,0 +1,69 @@
+#Is a tool for creating isolated python environments
+#virtual env 
+#creates its own installation directories
+#that doesn´t share libraries with other distributions
+#doesn't access to the globally install libraries either
+
+#easily we will use virtual env wrapper
+
+#cd..
+# sudo pip3 install virtualenvwrapper
+
+# create a foldre where the virtual environment will be created
+# mkdir ~/.venvs
+
+# vim ~/.bashrc
+
+# export WORKON_HOME=~/.venvs
+# source /usr/local/bin/virtualenvwrapper.sh
+#In some cases we need to specify the python interpreter is going to use.
+#If necessary it is to specify in bashrc file too.
+
+# which python3
+# copy the output path
+# export VIRTUALENVWRAPPER_PYTHON=PATH COPIED
+# source .bashrc
+
+
+# after that config
+
+# virtual env commands are going to be available
+
+# # To create as minimum as needed
+# mkvirtualenv mywebscrapper
+
+# # how to know you are in a virtual environment
+# the virtual environment will be in parenthesis at the beginning of the prompt.
+# (mywebscrapper)...
+
+#The location of installation is located in the virtual environment
+# Checking using which python, which pip, which
+# the output is point to a folder inside the enviroment structure created
+
+It is quite useful because installing packages does not interfere in the installation of the system.
+Without affectiont other virtual environments or the python installation of the system.
+
+pip3 freeze
+to see what is actually in the library of the virtual environment
+
+To close a user virtual environment or simply stop using it 
+Just need to type the command 
+deactivate
+
+It is visible that the prompt is modified
+.
+to reactivate use
+workon mywebscrapper
+
+pip and virtualenv are standart tools for packaging management
+
+There is an alternative package manager called conda, 
+installs and updates packages
+runs on different OS
+easily creates, saves, loads and switchs between environments, on your local machine
+It does the same thing as pip and virtualenv combined
+
+The only difference is python agnostica, it can install packages from binaries, 
+packages that are compiled and built to use in a specific platform.
+
+Saving the effort of compiling them again so the installation is easier.
